@@ -16,5 +16,6 @@ class Ec2:
         self.state: str = state
         self.image_id: str = image_id
         self.availability_zone: Optional[str] = availability_zone
+        self.tags: dict = {}
         if tags:
             self.tags.update(tags)

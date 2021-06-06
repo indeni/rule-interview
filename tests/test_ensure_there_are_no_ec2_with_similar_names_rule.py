@@ -15,11 +15,9 @@ class TestEnsureThereAreNoEc2WithSimilarNamesRule(unittest.TestCase):
     def test_are_not_similar_fail(self):
         # Arrange
         ec2_1: Ec2Instance = create_empty_entity(Ec2Instance)
-        tags_1 = {'name': 'cat'}
-        ec2_1.tags = tags_1
+        ec2_1.name = 'cat'
         ec2_2: Ec2Instance = create_empty_entity(Ec2Instance)
-        tags_2 = {'name': 'dog'}
-        ec2_2.tags = tags_2
+        ec2_2.name = 'dog'
         context = EnvironmentContext(ec2s=[ec2_1, ec2_2])
         # Act
         result = self.rule.run(context, {})
@@ -30,11 +28,9 @@ class TestEnsureThereAreNoEc2WithSimilarNamesRule(unittest.TestCase):
     def test_are_similar_pass(self):
         # Arrange
         ec2_1: Ec2Instance = create_empty_entity(Ec2Instance)
-        tags_1 = {'name': 'god'}
-        ec2_1.tags = tags_1
+        ec2_1.name = 'god'
         ec2_2: Ec2Instance = create_empty_entity(Ec2Instance)
-        tags_2 = {'name': 'good'}
-        ec2_2.tags = tags_2
+        ec2_2.name = 'good'
         context = EnvironmentContext(ec2s=[ec2_1, ec2_2])
         # Act
         result = self.rule.run(context, {})

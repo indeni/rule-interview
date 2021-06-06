@@ -9,8 +9,8 @@ from cloudrail.knowledge.rules.rule_parameters.base_paramerter import ParameterT
 class EnsureNoProductionTagRule(AwsBaseRule):
     def execute(self, env_context: EnvironmentContext, parameters: Dict[ParameterType, any]) -> List[Issue]:
         issues: List[Issue] = []
-        # TODO: Part 2 - using cloudrail-knowledge package write rule logic that alert (create issue)
-        # if the cloud resource contain environment=production tag
+        # TODO: Part 2 - using cloudrail-knowledge package write rule logic that alerts (creates an issue)
+        # if the cloud resource contains environment=production tag
         # documentation can be found here: https://knowledge.docs.cloudrail.app/)
         return issues
 

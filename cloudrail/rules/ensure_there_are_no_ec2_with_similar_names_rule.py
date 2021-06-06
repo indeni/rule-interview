@@ -9,7 +9,7 @@ from cloudrail.knowledge.rules.rule_parameters.base_paramerter import ParameterT
 class EnsureThereAreNoEc2WithSimilarNamesRule(AwsBaseRule):
     def execute(self, env_context: EnvironmentContext, parameters: Dict[ParameterType, any]) -> List[Issue]:
         issues: List[Issue] = []
-        # TODO: Part 3 - using cloudrail-knowledge package write rule logic that alert (create issue)
+        # TODO: Part 3 - using cloudrail-knowledge package write rule logic that alerts (creates an issue)
         # if the 2 ec2 instances contain similar name. See readme.md for similarity definition
         return issues
 
