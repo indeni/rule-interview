@@ -37,5 +37,7 @@ For example:
 
 ---
 **NOTE**
+
 make sure to run the unit tests under `tests` folder
+
 ---
