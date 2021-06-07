@@ -22,7 +22,7 @@ def main():
     ec2s: List[Ec2] = load_instances(cloud_json_data)
 
     ec2s_with_issue = get_ec2_contains_production_tag(ec2s)
-    print('Found {} ec2s with issues', len(ec2s_with_issue))
+    print('Found {} ec2s with issues'.format(len(ec2s_with_issue)))
 
 
 if __name__ == '__main__':

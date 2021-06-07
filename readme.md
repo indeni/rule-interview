@@ -36,8 +36,9 @@ For example:
 * `god` and `good` are  similar (only 1 missing letter)
 
 ---
-**NOTE**
+**NOTES**
 
-make sure to run the unit tests under `tests` folder
+1. Make sure to run the unit tests under `tests` folder
+2. Parts 2-3 should be done using the files under the `rules` folder.
 
 ---
