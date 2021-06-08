@@ -54,6 +54,10 @@
       "StateTransitionReason": "User initiated (2020-10-01 11:24:58 GMT)",
       "Tags": [
         {
+          "Key": "Name",
+          "Value": "dog"
+        },
+        {
           "Key": "aws:autoscaling:groupName",
           "Value": "chkp_fws"
         },
@@ -130,6 +134,10 @@
       "Tags": [
         {
           "Key": "Name",
+          "Value": "good"
+        },
+        {
+          "Key": "Name",
           "Value": "my_ec2"
         },
         {
@@ -192,6 +200,10 @@
       },
       "StateTransitionReason": "User initiated (2020-10-01 11:31:26 GMT)",
       "Tags": [
+        {
+          "Key": "Name",
+          "Value": "god"
+        },
         {
           "Key": "aws:autoscaling:groupName",
           "Value": "chkp_fws"
