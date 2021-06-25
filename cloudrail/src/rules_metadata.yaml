@@ -1,0 +1,13 @@
+rules_metadata:
+  - cloud_provider: amazon_web_services
+    rule_id: ensure_no_production_tag_rule
+    name: Resource needs not contain environment=production tag
+    severity: major
+    description: We would like to have resources that don't contains environment=production tag
+    human_readable_logic: Cloudrail will review all the resources and ensure that they don't contains environment=production tag
+    console_remediation_steps: Remove the rule, or change the environment=production tagt to be approved in this rule.
+    iac_remediation_steps: Remove the rule, or change the environment=production tagt to be approved in this rule.
+    rule_type: non_tag_correct
+    security_layer: iam
+    resource_type:
+    - iam
