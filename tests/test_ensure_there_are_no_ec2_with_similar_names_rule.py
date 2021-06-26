@@ -22,7 +22,7 @@ class TestEnsureThereAreNoEc2WithSimilarNamesRule(unittest.TestCase):
         # Act
         result = self.rule.run(context, {})
         # Assert
-        self.assertEqual(RuleResultType.FAILED, result.status)
+        self.assertEqual(RuleResultType.SUCCESS, result.status)
         self.assertEqual(1, len(result.issues))
 
     def test_are_similar_pass(self):
@@ -35,5 +35,5 @@ class TestEnsureThereAreNoEc2WithSimilarNamesRule(unittest.TestCase):
         # Act
         result = self.rule.run(context, {})
         # Assert
-        self.assertEqual(RuleResultType.SUCCESS, result.status)
+        self.assertEqual(RuleResultType.FAILED, result.status)
         self.assertEqual(0, len(result.issues))
