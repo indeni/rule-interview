@@ -40,5 +40,6 @@ For example:
 
 1. Make sure to run the unit tests under `tests` folder
 2. Parts 2-3 should be done using the files under the `rules` folder.
+3. For part 3, use your own code logic to evaluate similarities, do not import an external python package for this task.
 
 ---
